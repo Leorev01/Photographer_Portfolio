@@ -1,9 +1,13 @@
 import React from 'react'
 
-const page = () => {
+const ContactPage = () => {
   return (
-    <div>page</div>
+    <div className='bg-black pt-14'>
+        <h1 className="text-4xl text-white text-center py-10">
+            Contact Me
+        </h1>
+    </div>
   )
 }
 
-export default page
+export default ContactPage
