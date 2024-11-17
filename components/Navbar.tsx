@@ -26,25 +26,25 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
-                href="#"
+                href="/"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:text-white hover:border-white"
               >
                 Home
               </Link>
               <Link
-                href="#"
+                href="/contact"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:text-white hover:border-white"
               >
                 Contact Me
               </Link>
               <Link
-                href="#"
+                href="/photos"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:text-white hover:border-white"
               >
-                Projects
+                Photos
               </Link>
               <Link
-                href="#"
+                href="/about"
                 className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-white hover:text-white hover:border-white"
               >
                 About
@@ -62,28 +62,28 @@ export default function Navbar() {
         <div className="space-y-1 pb-4 pt-2">
           <DisclosureButton
             as="a"
-            href="#"
+            href="/"
             className="block border-l-4 py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
             Home
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="#"
+            href="/contact"
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
             Contact Me
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="#"
+            href="/photos"
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
-            Projects
+            Photos
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="#"
+            href="/about"
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
             About

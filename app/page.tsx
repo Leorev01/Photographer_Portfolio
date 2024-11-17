@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
 import InfoSection from "@/components/InfoSection";
 import MovingArrow from "@/components/MovingArrow";
 import Image from "next/image";
@@ -26,7 +25,6 @@ export default function Home() {
 
   return (
     <div className="bg-black">
-      <Navbar />
       {/* Image with Framer Motion for scaling and fading */}
       <motion.div
         className="w-full h-screen relative"
