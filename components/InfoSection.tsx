@@ -29,6 +29,7 @@ export default function InfoSection() {
 
         {/* Animate the button with motion */}
         <motion.div
+        className="flex justify-center space-x-4"
           initial={{ opacity: 0 }} // Start with opacity 0
           whileInView={{ opacity: 1 }} // Fade in when in view
           viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% of element is in view
@@ -39,6 +40,12 @@ export default function InfoSection() {
             className="inline-block bg-blue-600 text-white text-lg py-2 px-6 rounded-lg hover:bg-blue-700 transition"
           >
             Contact Me
+          </Link>
+          <Link
+            href="/photos"
+            className="inline-block bg-white text-blue-600 text-lg py-2 px-6 rounded-lg hover:bg-gray-300 transition"
+          >
+            View Photos
           </Link>
         </motion.div>
       </div>
