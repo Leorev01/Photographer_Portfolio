@@ -19,36 +19,37 @@ const ContactPage = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        setSuccessMessage(
-          'Thank you for reaching out! I will get back to you soon.'
-        );
-        setFormData({ name: '', email: '', message: '' });
-        setErrorMessage('');
-      } else {
+  // Replace '/api/send-email' with the new App Router path
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+    
+        try {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+    
         const data = await response.json();
-        setErrorMessage(data.message || 'Oops, something went wrong.');
-      }
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-      setErrorMessage('Oops, something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    
+        if (response.ok) {
+            setSuccessMessage('Thank you for reaching out! I will get back to you soon.');
+            setFormData({ name: '', email: '', message: '' });
+            setErrorMessage('');
+        } else {
+            setErrorMessage(data.message || 'Oops, something went wrong.');
+        }
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        } catch (error) {
+        setErrorMessage('Oops, something went wrong. Please try again.');
+        } finally {
+        setIsSubmitting(false);
+        }
+    };
+  
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center pt-14">
