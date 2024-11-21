@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tishaun Williams Photgraphy",
+  title: "Tishaun Williams Photography",
   description: "Photography in London and the UK",
 };
 
