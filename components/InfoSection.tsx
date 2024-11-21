@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function InfoSection() {
   return (
-    <section id="info" className="min-h-screen flex flex-col justify-center items-center py-20 bg-gray-900">
+    <section id="info" className="min-h-screen flex flex-col justify-center items-center py-20 bg-black">
       <div className="text-center max-w-3xl mx-auto">
         {/* Animate the heading with motion */}
         <motion.h2
