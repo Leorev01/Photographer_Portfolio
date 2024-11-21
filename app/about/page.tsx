@@ -99,7 +99,7 @@ const AboutPage = () => {
             If you&apos;re interested in collaborating on a photography project or just want to say hello, I&apos;d love to hear from you. Feel free to reach out!
           </motion.p>
           <a
-            href="Tishaunw20@gmail.com"
+            href="mailto:Tishaunw20@gmail.com"
             className="bg-blue-600 text-white py-3 px-8 rounded-full text-lg hover:bg-blue-700 transition-all duration-300"
           >
             Contact Me
