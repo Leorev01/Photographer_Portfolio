@@ -14,6 +14,7 @@ const images = [
 const EditedPage = () => {
   return (
       <div className="container mx-auto">
+        <h1 className="text-center text-3xl font-bold mt-4 text-white">Edited Photos</h1>
         <ImageGrid images={images}/>
       </div>
   )

@@ -20,6 +20,7 @@ const images = [
 const BlackAndWhitePage = () => {
   return (
     <div className="container mx-auto">
+        <h1 className="text-center text-3xl font-bold mt-4 text-white">Black and White Photos</h1>
         <ImageGrid images={images}/>
       </div>
   )

@@ -29,6 +29,7 @@ const images =[
 const PortraitPage = () => {
   return (
     <div className="container mx-auto">
+        <h1 className="text-center text-3xl font-bold mt-4 text-white">Portrait Photos</h1>
         <ImageGrid images={images}/>
     </div>
   )
