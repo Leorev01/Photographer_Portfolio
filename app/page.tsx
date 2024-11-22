@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import InfoSection from "@/components/InfoSection";
 import MovingArrow from "@/components/MovingArrow";
 import Image from "next/image";
-import whiteFlower from "@/public/images/white-flower.jpg";
+import whiteFlower from "@/public/images/nature/white-flower.jpg";
 import { motion, useTransform, useScroll } from "framer-motion";
 
 export default function Home() {

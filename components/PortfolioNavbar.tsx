@@ -9,7 +9,7 @@ const PortfolioNavbar = () => {
         <Link href={"/portfolio/nature"} className='text-white hover:scale-110'>Nature</Link>
         <Link href={"/portfolio/product"} className='text-white hover:scale-110'>Product</Link>
         <Link href={"/portfolio/edited"} className='text-white hover:scale-110'>Edited</Link>
-        <Link href={"/portfolio/other"} className='text-white hover:scale-110'>Black and White</Link>
+        <Link href={"/portfolio/black-and-white"} className='text-white hover:scale-110'>Black and White</Link>
     </div>
   )
 }

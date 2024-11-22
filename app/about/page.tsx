@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import kingVon from '@/public/images/king-von.jpg'; // Make sure you have a profile picture in your public/images folder
+import kingVon from '@/public/images/portrait/king-von.jpg'; // Make sure you have a profile picture in your public/images folder
 import Link from 'next/link';
 
 const AboutPage = () => {
