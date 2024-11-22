@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import kingVon from '@/public/images/king-von.jpg'; // Make sure you have a profile picture in your public/images folder
+import Link from 'next/link';
 
 const AboutPage = () => {
   return (
@@ -12,7 +13,7 @@ const AboutPage = () => {
           {/* Profile Picture */}
           <motion.div
             className="flex justify-center mb-8"
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
@@ -27,11 +28,16 @@ const AboutPage = () => {
           </motion.div>
 
           {/* Heading */}
-          <h1 className="text-4xl text-center py-5">About Me</h1>
+          <motion.h1 className="text-4xl text-center py-5"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}>
+            About Me
+          </motion.h1>
           <motion.p
             className="text-lg text-gray-400 leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
             Hello! I&apos;m a passionate photographer who loves to capture the beauty of the world around me. From stunning landscapes to intimate portraits, I strive to tell unique stories through my lens. Whether it&apos;s a special moment or a stunning view, my goal is to preserve memories that last a lifetime.
@@ -52,13 +58,17 @@ const AboutPage = () => {
           </motion.h2>
           <motion.p
             className="text-lg text-gray-400 mb-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
             Over the years, I&apos;ve honed my skills in various areas of photography. Here are some of the techniques and styles I specialize in:
           </motion.p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          <motion.div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          >
             <div className="bg-gray-800 text-center p-6 rounded-lg">
               <h3 className="text-xl text-white mb-4">Portrait Photography</h3>
               <p className="text-gray-400">Capturing personalities and emotions through portraits that tell a story.</p>
@@ -75,7 +85,7 @@ const AboutPage = () => {
               <h3 className="text-xl text-white mb-4">Product Photography</h3>
               <p className="text-gray-400">Showcasing products with professional lighting and compositions.</p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -92,18 +102,18 @@ const AboutPage = () => {
           </motion.h2>
           <motion.p
             className="text-lg text-gray-400 mb-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
             If you&apos;re interested in collaborating on a photography project or just want to say hello, I&apos;d love to hear from you. Feel free to reach out!
           </motion.p>
-          <a
+          <Link
             href="mailto:Tishaunw20@gmail.com"
             className="bg-blue-600 text-white py-3 px-8 rounded-full text-lg hover:bg-blue-700 transition-all duration-300"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       </section>
     </div>
