@@ -92,14 +92,14 @@ export default function Navbar() {
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="/photos"
+            href="/portfolio"
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
             Portfolio
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="/portfolio"
+            href="/about"
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-white hover:border-white hover:bg-gray-50 hover:text-gray-700"
           >
             About
